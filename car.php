@@ -7,7 +7,28 @@ class Truck
   public $playlist = [];
 }
 
-class Pickup extends Truck
+interface TruckSpecs {
+  public function calcMPG();
+}
+
+class Pickup extends Truck implements TruckSpecs
 {
   public $engine = 'v8';
+  private $fuelEfficiency;
+
+  public function __construct($fuelEfficiency)
+  {
+    $this -> fuelEfficiency = $fuelEfficiency;
+  }
+
+  public function calcMPG()
+  {
+    if ($this -> fuelEfficiency = 'poor') {
+      return 10;
+    } elseif ($this -> fuelEfficiency = 'average') {
+      return 20;
+    } else {
+      return 30;
+    }
+  }
 }

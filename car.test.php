@@ -33,9 +33,19 @@ Class Test extends TestCase
   }
   public function testInheritance()
   {
-    $pickup = new Pickup();
+    $pickup = new Pickup('poor');
     $this->assertEquals('silver', $pickup->color);
     $this->assertEquals('v8', $pickup->engine);
   }
-  public function test
+  public function testPolymorphism()
+  {
+    $bigPickup = new Pickup('poor');
+    $this->assertEquals(10, $bigPickup->calcMPG());
+
+    $pickup = new Pickup('average');
+    $this->assertEquals(20, $pickup->calcMPG());
+
+    $hybridPickup = new Pickup('great');
+    $this->assertEquals(30, $hybridPickup->calcMPG());
+  }
 }
