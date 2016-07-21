@@ -4,7 +4,5 @@ class Truck
 {
   public $color = 'silver';
   public $model = 't100';
+  public $playlist = [];
 }
-
-$truck = new Truck();
-echo "A $truck->color $truck->model";
