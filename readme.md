@@ -15,4 +15,4 @@ https://phpunit.de/manual/5.4/en/installation.html#installation.requirements
 
 
 ###Results:
-![alt text](https://github.com/blakeface/OOP-testing-playground/test_results.png "Test results from terminal")
+![alt text](https://github.com/blakeface/OOP-testing-playground/blob/master/test_results.png "Test results from terminal")
