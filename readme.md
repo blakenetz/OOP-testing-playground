@@ -11,4 +11,8 @@ https://phpunit.de/manual/5.4/en/installation.html#installation.requirements
 ####To install on a mac without wget:  
     $ curl https://phar.phpunit.de/phpunit.phar -L -o phpunit.phar  
     $ chmod +x phpunit.phar  
-    $ mv phpunit.phar /usr/local/bin/phpunit
+    $ mv phpunit.phar /usr/local/bin/phpunit  
+
+
+###Results:
+![alt text](https://github.com/blakeface/OOP-testing-playground/test_results.png "Test results from terminal")
