@@ -1,17 +1,12 @@
 <?php
 use PHPUnit\Framework\TestCase;
-include('car.php');
+require_once('car.php');
 
 Class Test extends TestCase
 {
-  public function testVariables()
+  public function testArrayLists()
   {
-    $color->assertEquals('green');
+    $this->assertObjectHasAttribute('color', new Truck);
+    $this->assertObjectHasAttribute('model', new Truck);
   }
 }
-
-echo "A $color $model";
-
-// public function import() {
-//   $this->assertTrue(true);
-// }
