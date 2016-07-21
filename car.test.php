@@ -48,4 +48,14 @@ Class Test extends TestCase
     $hybridPickup = new Pickup('great');
     $this->assertEquals(30, $hybridPickup->calcMPG());
   }
+  public function testEncapsulation()
+  {
+    $pickup = new Pickup('fantastic');
+    $this->assertObjectHasAttribute('fuelEfficiency', $pickup);
+    $this->assertEquals('fantastic', $pickup->getFuelEfficiency());
+
+    $beaterTruck = new Pickup('crap');
+    $this->assertObjectHasAttribute('fuelEfficiency', $beaterTruck);
+    $this->assertEquals('crap', $beaterTruck->getFuelEfficiency());
+  }
 }

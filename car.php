@@ -23,12 +23,12 @@ class Pickup extends Truck implements TruckSpecs
 
   public function calcMPG()
   {
-    if ($this -> fuelEfficiency = 'poor') {
-      return 10;
-    } elseif ($this -> fuelEfficiency = 'average') {
-      return 20;
-    } else {
-      return 30;
-    }
+    if ($this -> fuelEfficiency == 'poor') return 10;
+    if ($this -> fuelEfficiency == 'average') return 20;
+    else return 30;
+  }
+  public function getFuelEfficiency()
+  {
+    return $this -> fuelEfficiency;
   }
 }
